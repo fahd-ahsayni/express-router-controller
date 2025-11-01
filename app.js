@@ -1,6 +1,5 @@
 import express from "express";
-import usersRouter from "./routes/users.routes.js";
-import studentsRouter from "./routes/students.routes.js";
+import { studentsRouter, usersRouter } from "./src/routes";
 
 const app = express();
 const port = 3000;
