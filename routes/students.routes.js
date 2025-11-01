@@ -1,4 +1,5 @@
 const express = require("express");
+
 const {
   getAllStudent,
 } = require("../controllers/students/get-all-students.controller");
