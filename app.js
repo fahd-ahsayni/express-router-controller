@@ -1,9 +1,9 @@
-const express = require("express");
+import express from "express";
+import usersRouter from "./routes/users.routes.js";
+import studentsRouter from "./routes/students.routes.js";
+
 const app = express();
 const port = 3000;
-
-const usersRouter = require("./routes/users");
-const studentsRouter = require("./routes/students");
 
 app.use("/users", usersRouter);
 app.use("/students", studentsRouter);

@@ -2,6 +2,6 @@ const getStudentById = (req, res) => {
   res.send("get student by id " + req.params.id);
 };
 
-module.exports = {
+export {
   getStudentById,
 };

@@ -1,13 +1,13 @@
-const express = require("express");
-const {
+import express from "express";
+import {
   getAllStudent,
-} = require("../controllers/students/get-all-students.controller");
-const {
+} from "../controllers/students/get-all-students.controller.js";
+import {
   createNewStudent,
-} = require("../controllers/students/create-new-student.controller");
-const {
+} from "../controllers/students/create-new-student.controller.js";
+import {
   getStudentById,
-} = require("../controllers/students/get-student-by-id.controller");
+} from "../controllers/students/get-student-by-id.controller.js";
 
 const router = express.Router();
 
@@ -15,4 +15,4 @@ router.get("/", getAllStudent);
 router.post("/", createNewStudent);
 router.get("/:id", getStudentById);
 
-module.exports = router;
+export default router;

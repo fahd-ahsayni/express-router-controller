@@ -1,18 +1,15 @@
-const express = require("express");
+import express from "express";
 
-const { getAllUsers } = require("../controllers/users/get-users.controller");
-const { createUser } = require("../controllers/users/create-user.controller");
-const { getUser } = require("../controllers/users/get-user.controller");
-const { updateUser } = require("../controllers/users/update-user.controller");
+import { getAllUsers } from "../controllers/users/get-users.controller.js";
+import { createUser } from "../controllers/users/create-user.controller.js";
+import { getUser } from "../controllers/users/get-user-by-id.controller.js";
+import { updateUser } from "../controllers/users/update-user.controller.js";
 
 const router = express.Router();
 
 router.get("/", getAllUsers);
-
 router.post("/", createUser);
-
 router.get("/:id", getUser);
-
 router.put("/:id", updateUser);
 
-module.exports = router;
+export default router;
