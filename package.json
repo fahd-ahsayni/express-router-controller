@@ -10,6 +10,15 @@
   "author": "",
   "license": "ISC",
   "type": "module",
+  "imports": {
+    "#routes": "./src/routes/index.js",
+    "#routes/*": "./src/routes/*",
+    "#controllers": "./src/controllers/index.js",
+    "#controllers/*": "./src/controllers/*",
+    "#helpers/*": "./src/helpers/*",
+    "#constants": "./src/constants/index.js",
+    "#constants/*": "./src/constants/*"
+  },
   "dependencies": {
     "express": "^5.1.0",
     "express-list-endpoints": "^7.1.1"

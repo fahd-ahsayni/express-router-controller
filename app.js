@@ -1,7 +1,7 @@
 import express from "express";
-import { PORT } from "./src/constants/index.js";
-import listAllRoutes from "./src/helpers/list-all-routes.js";
-import { studentsRouter, usersRouter } from "./src/routes/index.js";
+import { PORT } from "#constants";
+import listAllRoutes from "#helpers/list-all-routes.js";
+import { studentsRouter, usersRouter } from "#routes";
 
 const app = express();
 
