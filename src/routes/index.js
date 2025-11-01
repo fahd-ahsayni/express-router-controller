@@ -1,4 +1,2 @@
-import usersRouter from "./src/routes/users.routes.js";
-import studentsRouter from "./src/routes/students.routes.js";
-
-export { usersRouter, studentsRouter };
+export { default as studentsRouter } from "./students.routes.js";
+export { default as usersRouter } from "./users.routes.js";

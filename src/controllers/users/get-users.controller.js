@@ -1,4 +1,4 @@
-const getAllUsers = (req, res) => {
+const getAllUsers = (_, res) => {
   res.send("get all users!");
 };
 
